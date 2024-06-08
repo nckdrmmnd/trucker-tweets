@@ -94,6 +94,11 @@ function App() {
         .then(data => setUser(data))
         
     }
+
+    function handleLoginCheck(e){
+        e.preventDefault()
+        
+    }
     function handleSignupSubmit(e){
         e.preventDefault()
         fetch("http://127.0.0.1:4000/signup", {
